@@ -12,14 +12,14 @@ console.log("Testing the server in a good environment");
 app.use(express.json());
 app.use(cookieParser());
 
-// CORS options
+
 const corsOptions = {
-    origin: 'http://localhost:5173', // Allow requests from this origin
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed HTTP methods
-    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+    origin: 'http://localhost:5173',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
+    credentials: true, 
 };
 
-// Use CORS middleware with options
+
 app.use(cors(corsOptions));
 
 app.use('/auth', authRoutes);

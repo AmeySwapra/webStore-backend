@@ -31,7 +31,7 @@ export const resgiter = async (req, res) => {
             }
         })
         console.log(newUser)
-        res.status(201).json({message: "User created Successfully..!"})
+        res.status(201).json(newUser)
     } catch (error) {
         console.log(error)
         res.status(500).json({message: "Failed to Created User..!!"})
