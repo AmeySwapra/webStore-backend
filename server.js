@@ -14,7 +14,7 @@ app.use(cookieParser());
 
 
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: ['http://localhost:5173', 'https://swapra-bookstore.netlify.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
     credentials: true, 
 };
